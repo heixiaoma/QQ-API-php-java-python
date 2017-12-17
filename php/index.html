@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QQ点赞评论系统</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="top-image">
+  <div id="content" class="container center-block" style="margin-top: 100px">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>QQ空间，一键辅助</h1>
+        <p>传入你的Cookie，和QQ号码，即可免费为你点赞和评论</p>
+        <div class="input-group input-group-lg">
+          <form method="post" action="rec.php">
+          <input type="text" name="qq" class="form-control" placeholder="输入QQ号码" aria-describedby="sizing-addon1"/>
+          <input type="text" name="content" class="form-control" placeholder="输入需要评论的内容，不填代表不评论" aria-describedby="sizing-addon1"/>
+          <textarea name="cookie"  placeholder="输入QQ空间Cookie" ></textarea>
+          <input id="subm" type="submit"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/ios-parallax.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#top-image').iosParallax({
+	movementFactor: 50
+  });
+});
+</script>
+
+
+
+</body>
+</html>
